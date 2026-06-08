@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MsKarts.com — Dark Art 3D Prints</title>
+  <meta name="description" content="Hand-painted 3D printed dark art — skulls, creatures, butterflies and more. Each piece is a one-of-a-kind collector's item." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-name">Ms<span class="k">K</span>arts<span class="dot">.com</span></span>
+        <span class="logo-sub">Dark Art 3D Prints</span>
+      </a>
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link active">Shop</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="search-toggle" aria-label="Search"><i class="ti ti-search"></i></button>
+        <button class="icon-btn" id="wishlist-btn" aria-label="Wishlist" style="position:relative">
+          <i class="ti ti-heart"></i>
+          <span class="badge" id="wishlist-count" style="display:none">0</span>
+        </button>
+        <button class="icon-btn cart-btn" id="cart-toggle" aria-label="Cart">
+          <i class="ti ti-shopping-bag"></i>
+          <span style="position:relative">Cart</span>
+          <span class="badge" id="cart-count" style="position:static;width:auto;height:auto;border-radius:2px;padding:0 4px;font-size:10px;background:rgba(0,0,0,0.4);color:#fff">0</span>
+        </button>
+      </div>
+    </div>
+    <div class="search-bar" id="search-bar" style="display:none">
+      <div class="container">
+        <input type="text" id="search-input" placeholder="Search pieces..." autocomplete="off" />
+        <button class="icon-btn" id="search-close" aria-label="Close"><i class="ti ti-x"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="announcement">
+    &#9760; Free shipping over $75 &nbsp;&mdash;&nbsp; Every piece hand-painted &nbsp;&mdash;&nbsp; Ships in 3&ndash;5 days &#9760;
+  </div>
+
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="images/balrog-skullwood.jpg" alt="" aria-hidden="true" />
+      <img src="images/octopus-skull-pink.png" alt="" aria-hidden="true" />
+      <img src="images/butterfly-teal.png" alt="" aria-hidden="true" />
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="hero-eyebrow">Hand-painted collector art</p>
+      <h1 class="hero-title">
+        Dark Art<span class="line2">Born From</span><span class="line3">The Void</span>
+      </h1>
+      <p class="hero-sub">One-of-a-kind 3D printed sculptures, wall pieces, and figures. Every piece hand-painted and made to order.</p>
+      <div class="hero-ctas">
+        <a href="#products" class="btn-primary"><i class="ti ti-arrow-down" style="font-size:14px"></i> Shop the collection</a>
+        <a href="about.html" class="btn-outline">Our story</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Hand-painted</div>
+        </div>
+        <div>
+          <div class="stat-num">3–5</div>
+          <div class="stat-label">Days to ship</div>
+        </div>
+        <div>
+          <div class="stat-num">11+</div>
+          <div class="stat-label">Pieces available</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">Hand-Painted</span><span class="marquee-sep">&nbsp;&#9670;&nbsp;</span>
+      <span class="marquee-item">3D Printed Art</span><span class="marquee-sep">&nbsp;&#9670;&nbsp;</span>
+      <span class="marquee-item">Dark Fantasy</span><span class="marquee-sep">&nbsp;&#9670;&nbsp;</span>
+      <span class="marquee-item">Collector Pieces</span><span class="marquee-sep">&nbsp;&#9670;&nbsp;</span>
+      <span class="marquee-item">Made To Order</span><span class="marquee-sep">&nbsp;&#9670;&nbsp;</span>
+      <span class="marquee-item">Ships In 3–5 Days</span><span class="marquee-sep">&nbsp;&#9670;&nbsp;</span>
+      <span class="marquee-item">MsKarts.com</span><span class="marquee-sep">&nbsp;&#9670;&nbsp;</span>
+      <span class="marquee-item">Hand-Painted</span><span class="marquee-sep">&nbsp;&#9670;&nbsp;</span>
+      <span class="marquee-item">3D Printed Art</span><span class="marquee-sep">&nbsp;&#9670;&nbsp;</span>
+      <span class="marquee-item">Dark Fantasy</span><span class="marquee-sep">&nbsp;&#9670;&nbsp;</span>
+      <span class="marquee-item">Collector Pieces</span><span class="marquee-sep">&nbsp;&#9670;&nbsp;</span>
+      <span class="marquee-item">Made To Order</span><span class="marquee-sep">&nbsp;&#9670;&nbsp;</span>
+      <span class="marquee-item">Ships In 3–5 Days</span><span class="marquee-sep">&nbsp;&#9670;&nbsp;</span>
+      <span class="marquee-item">MsKarts.com</span><span class="marquee-sep">&nbsp;&#9670;&nbsp;</span>
+    </div>
+  </div>
+
+  <section class="cat-strip">
+    <div class="container">
+      <div class="cat-inner">
+        <button class="cat-btn active" data-filter="all"><i class="ti ti-layout-grid"></i>All pieces</button>
+        <button class="cat-btn" data-filter="wall"><i class="ti ti-layout-board"></i>Wall art</button>
+        <button class="cat-btn" data-filter="sculpture"><i class="ti ti-diamond"></i>Sculptures</button>
+        <button class="cat-btn" data-filter="figure"><i class="ti ti-user"></i>Figures</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="toolbar">
+        <span class="results-count" id="results-count">11 pieces</span>
+        <select class="sort-select" id="sort-select">
+          <option value="featured">Featured</option>
+          <option value="price-asc">Price: low to high</option>
+          <option value="price-desc">Price: high to low</option>
+          <option value="newest">Newest</option>
+        </select>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+    </div>
+  </section>
+
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart">
+    <div class="drawer-header">
+      <h2>Your Cart</h2>
+      <button class="icon-btn" id="cart-close" aria-label="Close cart"><i class="ti ti-x"></i></button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <p class="cart-empty">Your cart is empty</p>
+    </div>
+    <div class="cart-footer" id="cart-footer" style="display:none">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cart-total">$0.00</span>
+      </div>
+      <p class="cart-note">Square payments coming soon</p>
+      <button class="btn-primary full" disabled style="opacity:0.4;cursor:not-allowed">Checkout (coming soon)</button>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-name" style="font-size:22px">Ms<span class="k">K</span>arts<span class="dot">.com</span></span>
+        <p>Hand-painted 3D printed dark art.<br/>Every piece made to order — no two are exactly alike.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Shop</h4>
+        <a href="#products">All pieces</a>
+        <a href="#products">Wall art</a>
+        <a href="#products">Sculptures</a>
+        <a href="#products">Figures</a>
+      </div>
+      <div class="footer-links">
+        <h4>Info</h4>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Shipping policy</a>
+        <a href="#">Returns</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>&copy; 2026 <span class="footer-pink">MsKarts.com</span>. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
