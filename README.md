@@ -1,1 +1,0 @@
-# mskarts-website
